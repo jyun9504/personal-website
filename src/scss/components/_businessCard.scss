@@ -1,8 +1,18 @@
 .business-card {
+	width: 100%;
+	position: relative;
 	display: flex;
+	flex-wrap: wrap;
+
+	@include respond(phone) {
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+    }
 }
 
 .avatar {
+	min-width: 10rem;
 	width: 10rem;
 	height: 10rem;
 	border-radius: 50%;
@@ -14,18 +24,25 @@
 }
 
 .profile {
+	min-width: 20rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	margin-left: 1rem;
 	
 	&__name {
+		line-height: 2rem;
 		font-size: 2rem;
 		font-weight: 600;
 	}
 	&__info {
+		line-height: 2rem;
 		font-size: 1.2rem;
 		font-weight: 400;
 		color: #666666
 	}
+	@include respond(phone) {
+		text-align: center;
+		margin: 1rem;
+    }
 }

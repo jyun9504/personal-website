@@ -2,7 +2,7 @@ import React from 'react';
 
 const Paper = (props) => {
 	return (
-		<div class="paper u-container-width">
+		<div className="paper u-container-width u-margin-bottom-medium">
 			{ props.children }
 		</div>
 	)
