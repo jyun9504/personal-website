@@ -1,0 +1,17 @@
+@keyframes collapseOpen {
+	0%{
+		height: 0;
+	}
+	100%{
+		height: auto;
+	}
+}
+
+@keyframes collapseClose {
+  0%{
+		height: auto;
+	}
+	100%{
+		height: 0;
+	}
+}

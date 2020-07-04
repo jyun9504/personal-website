@@ -1,0 +1,39 @@
+.collapse {
+	
+  &__btn {
+		width: 3rem;
+		height: 3rem;
+		min-width: 3rem;
+		border-radius: 50%;
+		background-color: #101830;
+		cursor: pointer;
+		text-align: center;
+
+		&::after {
+			content: "+";
+			width: 100%;
+			height: 100%;
+			font-size: 2.5rem;
+			font-weight: 600;
+			color: #fff;
+		}
+	}
+
+	&__title {
+		display: flex;
+
+		&__text {
+			align-self: center;
+			margin-left: 1rem;
+			font-size: 2rem;
+			font-weight: 600;
+		}
+	}
+
+	&__content {
+		width: 100%;
+		height: 0;
+		overflow: hidden;
+		transition: all .2s ease-out;
+	}
+}

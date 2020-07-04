@@ -10,6 +10,11 @@
     margin: 0 auto;
 }
 
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 @mixin absCenter {
     position: absolute;

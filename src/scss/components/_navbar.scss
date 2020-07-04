@@ -1,0 +1,20 @@
+.navbar {
+    width: 10rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.router-link {
+    text-decoration: none;
+    color: #B2B2B2;
+    font-size: 1.4rem;
+    font-weight: 600;
+
+    &:focus, &:hover, &:visited, &:link, &:active {
+        text-decoration: none;
+    }
+
+    &--active {
+        color: #101830;
+    }
+}
