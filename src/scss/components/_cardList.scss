@@ -1,0 +1,21 @@
+.card-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include respond(tab-land){
+        justify-content: space-around;
+    }
+}
+
+.filling-empty-space-child {
+    width: 22rem;
+    height: 0;
+}
+
+.card {
+    width: 22rem;
+    height: 20rem;
+    background: red;
+    margin: 1rem 0;
+}
