@@ -1,19 +1,22 @@
 import React from 'react';
+import SkillCard from '../SkillCard';
+import SkillCards from './SkillCardsData'; 
 
 
 function CardList() {
   return (
     <div className="card-list">
-      <div className="card"></div>
-      <div className="card"></div>
-      <div className="card"></div>
-      <div className="card"></div>
-      <div className="card"></div>
-      <div className="card"></div>
-      <div className="card"></div>
-      <div className="card"></div>
-      <div className="filling-empty-space-child"></div>
-      <div className="filling-empty-space-child"></div>
+			{ 
+				SkillCards.map(card => {
+					return (
+						<SkillCard
+							icon={ card.icon } 
+							title={ card.title } 
+							content={ card.content } 
+						/>
+					)
+				}) 
+			}
       <div className="filling-empty-space-child"></div>
     </div>
   );

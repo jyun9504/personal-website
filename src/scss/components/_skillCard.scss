@@ -1,0 +1,48 @@
+.skill-card {
+    width: 35rem;
+    height: 12rem;
+    background: #fff;
+    box-shadow: .4rem .5rem 1rem rgba(36, 36, 36, 0.2);
+    margin: 1rem 0;
+    padding: 2rem;
+    display: flex;
+    
+    &__circle {
+        min-width: 7rem;
+        height: 7rem;
+        background-color: #f3f3f3;
+        border-radius: 50%;
+        @include flexCenter;
+    }
+
+    &__img-box {
+        width: 5rem;
+        height: 5rem;
+        background-color: #fff;
+        border-radius: 50%;
+        box-shadow: .4rem .4rem .5rem rgba(36, 36, 36, 0.1);
+        @include flexCenter;
+    }
+
+    &__img {
+        width: 3rem;
+        height: 3rem;
+        background-color: #fff;
+        
+    }
+}
+
+.skill-content-box {
+    margin-left: 2rem;
+}
+
+.skill-content-title {
+    font-size: 2rem;
+    font-weight: 600;
+}
+.skill-content {
+    margin-top: 1rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #707B9D;
+}
