@@ -1,6 +1,7 @@
 import React from 'react';
 import Collapse from '../../components/Collapse';
 import CardList from '../../components/CardList';
+import ProjectList from '../../components/ProjectList';
 import Paper from '../../components/Paper';
 
 function About() {
@@ -18,6 +19,11 @@ function About() {
           title = '專業能力'
         >
           <CardList />
+        </Collapse>
+        <Collapse
+          title = '專案經驗'
+        >
+          <ProjectList />
         </Collapse>
       </Paper>
     </div>

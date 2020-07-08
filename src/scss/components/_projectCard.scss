@@ -1,0 +1,54 @@
+.project-card {
+  background: #fff;
+  box-shadow: .4rem .5rem 1rem rgba(36, 36, 36, 0.2);
+  margin: 1rem 0;
+  padding: 2rem;
+  display: flex;
+
+  @include respond(tab-port){
+    flex-wrap: wrap;
+  }
+  
+}
+
+.project-img-box {
+  background-color: #fff;
+  box-shadow: .2rem .2rem .5rem rgba(36, 36, 36, 0.3);
+  padding: 1rem;
+  position: relative;
+}
+
+.project-img {
+  width: 30rem;
+  height: 20rem;
+
+  @include respond(tab-port){
+    width: 15rem;
+    height: 10rem;
+  }
+}
+
+
+.project-content-box {
+  margin-left: 2rem;
+  align-self: center;
+
+  @include respond(tab-port){
+    margin-left: 0;
+  }
+}
+.project-title {
+  font-size: 2rem;
+  font-weight: 600;
+  @include respond(tab-port){
+    margin: 2rem 0;
+  }
+}
+
+.project-content {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  color: #42485c;
+}

@@ -5,7 +5,7 @@ function Works() {
   return (
     <div className="works">
       <Paper>
-        <p>works</p>
+        <h1 className="heading-primary">作品</h1>
       </Paper>
     </div>
   );

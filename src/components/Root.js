@@ -11,11 +11,9 @@ import Navbar from './Navbar'
 
 const getDefaultTimeline = (node, delay) => {
   const timeline = new Timeline({ paused: true });
-  const content = node.querySelector('.paper');
 
   timeline
-    .from(node, 0.3, { display: 'none', autoAlpha: 0, delay, ease: Power1.easeIn })
-    .from(content, 0.15, { autoAlpha: 0, y: 25, ease: Power1.easeInOut })
+    .from(node, 0.3, { display: 'none', autoAlpha: 0, y: 25, delay, ease: Power1.easeInOut });
 
   return timeline;
 }
@@ -24,13 +22,13 @@ export const play = (node, appears) => {
   const delay = appears ? 0 : 0.4;
   let timeline = getDefaultTimeline(node, delay);
 
-  timeline.play()
+  timeline.play();
 }
 
 export const exit = (node) => {
   const timeline = new Timeline({ paused: true });
 
-  timeline.to(node, 0.15, { autoAlpha: 0, ease: Power1.easeOut });
+  timeline.to(node, 0.15, { autoAlpha: 0, y: 10, ease: Power1.easeOut });
   timeline.play();
 }
 
