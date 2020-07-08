@@ -1,9 +1,12 @@
 import React from 'react';
+import Paper from '../../components/Paper';
 
 function Works() {
   return (
     <div className="works">
-      <p>works</p>
+      <Paper>
+        <p>works</p>
+      </Paper>
     </div>
   );
 }
