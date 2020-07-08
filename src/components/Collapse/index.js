@@ -8,20 +8,36 @@ class Collapse extends Component {
       activeClass: ''
     }
     this.collapseRef = React.createRef();
+    this.updateDimensions = this.updateDimensions.bind(this);
   }
-  handleCollapseActive () {
+  componentDidMount() {
+    window.addEventListener("resize", this.updateDimensions);
+  }
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.updateDimensions);
+  }
+  updateDimensions() {
+    if(this.state.collapseActive){
+      this.setCollapseHeight(0 + 'px');
+      this.setState({activeClass: '', collapseActive: !this.state.collapseActive});
+    }
+  }
+  handleCollapseActive() {
     const collapse = this.collapseRef.current;
-    console.log(collapse.style)
     if(!this.state.collapseActive){
-      collapse.style.height = collapse.scrollHeight + 'px';
+      this.setCollapseHeight(collapse.scrollHeight + 'px')
       this.setState({activeClass:'collapse__btn--active'})
     } else {
-      collapse.style.height = 0 + 'px';
+      this.setCollapseHeight('0px');
       this.setState({activeClass: ''})
     }
     this.setState({
       collapseActive: !this.state.collapseActive
     })
+  }
+  setCollapseHeight(height){
+    const collapse = this.collapseRef.current;
+    collapse.style.height = height;
   }
   render() {
     return (

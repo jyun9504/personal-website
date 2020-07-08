@@ -3,6 +3,7 @@ import IconCSS from '../../assets/skill-icons/icon__css3.png'
 import IconReact from '../../assets/skill-icons/icon__reactjs.png'
 import IconGit from '../../assets/skill-icons/icon__git.png'
 import IconJQuery from '../../assets/skill-icons/icon__jquery.png'
+import IconResult from '../../assets/skill-icons/icon__results-driven.png'
 
 const SkillCards = [ 
 	{
@@ -30,6 +31,11 @@ const SkillCards = [
 		title: 'Git', 
 		content: '熟悉 git / github (command line)版本控制。'
 	},
+	{
+		icon: IconResult, 
+		title: '解決問題', 
+		content: '非常樂於接受想法，通過技術將其變為現實。'
+	}
 ]
 
 export default SkillCards;

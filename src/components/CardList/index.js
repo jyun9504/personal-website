@@ -13,6 +13,7 @@ function CardList() {
 							icon={ card.icon } 
 							title={ card.title } 
 							content={ card.content } 
+							key={ card.title }
 						/>
 					)
 				}) 
