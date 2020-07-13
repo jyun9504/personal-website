@@ -3,6 +3,8 @@ import Collapse from '../../components/Collapse';
 import CardList from '../../components/CardList';
 import ProjectList from '../../components/ProjectList';
 import Paper from '../../components/Paper';
+import SkillCard from '../../components/SkillCard'
+import SkillCards from './SkillCardsData';
 
 function About() {
   return (
@@ -18,7 +20,20 @@ function About() {
         <Collapse
           title = '專業能力'
         >
-          <CardList />
+          <CardList>
+            { 
+              SkillCards.map(card => {
+                return (
+                  <SkillCard
+                    icon={ card.icon } 
+                    title={ card.title } 
+                    content={ card.content } 
+                    key={ card.title }
+                  />
+                )
+              }) 
+            }
+          </CardList>
         </Collapse>
         <Collapse
           title = '專案經驗'

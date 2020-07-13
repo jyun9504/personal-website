@@ -1,23 +1,9 @@
 import React from 'react';
-import SkillCard from '../SkillCard';
-import SkillCards from './SkillCardsData'; 
 
-
-function CardList() {
+function CardList(props) {
   return (
     <div className="card-list">
-			{ 
-				SkillCards.map(card => {
-					return (
-						<SkillCard
-							icon={ card.icon } 
-							title={ card.title } 
-							content={ card.content } 
-							key={ card.title }
-						/>
-					)
-				}) 
-			}
+			{ props.children }
       <div className="filling-empty-space-child"></div>
     </div>
   );
