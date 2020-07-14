@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { TransitionGroup, Transition } from "react-transition-group";
-import { TimelineMax as Timeline, Power1 } from 'gsap';
+import { gsap, TimelineMax as Timeline, Power1 } from 'gsap';
 import Paper from './Paper';
 import BusinessCard from './BusinessCard';
 import About from '../containers/About';
 import Works from '../containers/Works';
 import Divider from './Divider';
-import Navbar from './Navbar'
+import Navbar from './Navbar';
+
+gsap.registerPlugin(Timeline, Power1);
 
 const getDefaultTimeline = (node, delay) => {
   const timeline = new Timeline({ paused: true });
