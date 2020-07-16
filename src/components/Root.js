@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { Redirect, BrowserRouter, Switch, Route} from 'react-router-dom';
 import { TransitionGroup, Transition } from "react-transition-group";
 import { gsap, TimelineMax as Timeline, Power1 } from 'gsap';
 import Paper from './Paper';
@@ -8,9 +8,7 @@ import About from '../containers/About';
 import Works from '../containers/Works';
 import Divider from './Divider';
 import Navbar from './Navbar';
-import { createBrowserHistory } from "history";
-
-const history = createBrowserHistory();
+import NotFoundPage from './NotFoundPage';
 
 gsap.registerPlugin(Timeline, Power1);
 
@@ -47,7 +45,7 @@ class App extends Component {
             <Divider />
             <Navbar />
           </Paper>
-          <Route history={history} render={({ location }) => {
+          <Route render={({ location }) => {
             const { key } = location
 
             return (
@@ -60,8 +58,10 @@ class App extends Component {
                   timeout={{enter: 750, exit: 150}}
                 >
                   <Switch location={location}>
-                    <Route path="/personal-website/" exact component={ About } />
+                    <Route path="/personal-website" exact component={ About } />
                     <Route path="/personal-website/works" component={ Works } />
+                    <Route path="/404" component={NotFoundPage} />
+                    <Redirect to="/404" />
                   </Switch>
                 </Transition>
               </TransitionGroup>
