@@ -60,8 +60,8 @@ class App extends Component {
                   <Switch location={location}>
                     <Route path="/personal-website" exact component={ About } />
                     <Route path="/personal-website/works" component={ Works } />
-                    <Route path="/404" component={NotFoundPage} />
-                    <Redirect to="/404" />
+                    <Route path="/personal-website/404" component={NotFoundPage} />
+                    <Redirect to="/personal-website/404" />
                   </Switch>
                 </Transition>
               </TransitionGroup>
