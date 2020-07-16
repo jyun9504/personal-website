@@ -8,6 +8,9 @@ import About from '../containers/About';
 import Works from '../containers/Works';
 import Divider from './Divider';
 import Navbar from './Navbar';
+import { createBrowserHistory } from "history";
+
+const history = createBrowserHistory();
 
 gsap.registerPlugin(Timeline, Power1);
 
@@ -44,7 +47,7 @@ class App extends Component {
             <Divider />
             <Navbar />
           </Paper>
-          <Route render={({ location }) => {
+          <Route history={history} render={({ location }) => {
             const { key } = location
 
             return (
