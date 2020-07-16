@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/personal-website/static/css/main.3870d4fb.chunk.css",
-    "main.js": "/personal-website/static/js/main.54dcfbf2.chunk.js",
-    "main.js.map": "/personal-website/static/js/main.54dcfbf2.chunk.js.map",
+    "main.css": "/personal-website/static/css/main.7935f0c8.chunk.css",
+    "main.js": "/personal-website/static/js/main.d404b92d.chunk.js",
+    "main.js.map": "/personal-website/static/js/main.d404b92d.chunk.js.map",
     "runtime-main.js": "/personal-website/static/js/runtime-main.a8c0a622.js",
     "runtime-main.js.map": "/personal-website/static/js/runtime-main.a8c0a622.js.map",
-    "static/js/2.d3a29978.chunk.js": "/personal-website/static/js/2.d3a29978.chunk.js",
-    "static/js/2.d3a29978.chunk.js.map": "/personal-website/static/js/2.d3a29978.chunk.js.map",
+    "static/js/2.db36d0b1.chunk.js": "/personal-website/static/js/2.db36d0b1.chunk.js",
+    "static/js/2.db36d0b1.chunk.js.map": "/personal-website/static/js/2.db36d0b1.chunk.js.map",
     "index.html": "/personal-website/index.html",
-    "precache-manifest.4888b340ea00120c35326dd64e243fe5.js": "/personal-website/precache-manifest.4888b340ea00120c35326dd64e243fe5.js",
+    "precache-manifest.2f169351cb07309c138e44713366ca7e.js": "/personal-website/precache-manifest.2f169351cb07309c138e44713366ca7e.js",
     "service-worker.js": "/personal-website/service-worker.js",
-    "static/css/main.3870d4fb.chunk.css.map": "/personal-website/static/css/main.3870d4fb.chunk.css.map",
-    "static/js/2.d3a29978.chunk.js.LICENSE.txt": "/personal-website/static/js/2.d3a29978.chunk.js.LICENSE.txt",
+    "static/css/main.7935f0c8.chunk.css.map": "/personal-website/static/css/main.7935f0c8.chunk.css.map",
+    "static/js/2.db36d0b1.chunk.js.LICENSE.txt": "/personal-website/static/js/2.db36d0b1.chunk.js.LICENSE.txt",
     "static/media/avatar1.png": "/personal-website/static/media/avatar1.49407d35.png",
     "static/media/buytea.png": "/personal-website/static/media/buytea.e781356b.png",
     "static/media/catchy.jpg": "/personal-website/static/media/catchy.4f6dc274.jpg",
@@ -26,8 +26,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.a8c0a622.js",
-    "static/js/2.d3a29978.chunk.js",
-    "static/css/main.3870d4fb.chunk.css",
-    "static/js/main.54dcfbf2.chunk.js"
+    "static/js/2.db36d0b1.chunk.js",
+    "static/css/main.7935f0c8.chunk.css",
+    "static/js/main.d404b92d.chunk.js"
   ]
 }
