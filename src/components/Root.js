@@ -9,6 +9,7 @@ import Works from '../containers/Works';
 import Divider from './Divider';
 import Navbar from './Navbar';
 import NotFoundPage from './NotFoundPage';
+import Helmet from 'react-helmet';
 
 gsap.registerPlugin(Timeline, Power1);
 
@@ -39,35 +40,37 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <div>
-          <Paper>
-            <BusinessCard />
-            <Divider />
-            <Navbar />
-          </Paper>
-          <Route render={({ location }) => {
-            const { key } = location
+        <Helmet>
+                <meta charSet="utf-8" />
+                <title>Wang Xiang Lin</title>
+        </Helmet>
+        <Paper>
+          <BusinessCard />
+          <Divider />
+          <Navbar />
+        </Paper>
+        <Route render={({ location }) => {
+          const { key } = location
 
-            return (
-              <TransitionGroup component={null}>
-                <Transition
-                  key={key}
-                  appear={true}
-                  onEnter={(node, appears) => play(node, appears)}
-                  onExit={(node, appears) => exit(node, appears)}
-                  timeout={{enter: 750, exit: 150}}
-                >
-                  <Switch location={location}>
-                    <Route path="/personal-website" exact component={ About } />
-                    <Route path="/personal-website/works" component={ Works } />
-                    <Route path="/personal-website/404" component={NotFoundPage} />
-                    <Redirect to="/personal-website/404" />
-                  </Switch>
-                </Transition>
-              </TransitionGroup>
-            )
-          }}/>
-        </div>
+          return (
+            <TransitionGroup component={null}>
+              <Transition
+                key={key}
+                appear={true}
+                onEnter={(node, appears) => play(node, appears)}
+                onExit={(node, appears) => exit(node, appears)}
+                timeout={{enter: 750, exit: 150}}
+              >
+                <Switch location={location}>
+                  <Route path="/personal-website" exact component={ About } />
+                  <Route path="/personal-website/works" component={ Works } />
+                  <Route path="/personal-website/404" component={NotFoundPage} />
+                  <Redirect to="/personal-website/404" />
+                </Switch>
+              </Transition>
+            </TransitionGroup>
+          )
+        }}/>
       </BrowserRouter>
     );
   }
