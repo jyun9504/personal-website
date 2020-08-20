@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './scss/main.scss';
 import App from './components/Root';
 import * as serviceWorker from './serviceWorker';
+import 'tachyons';
 
 ReactDOM.render(
   <React.StrictMode>

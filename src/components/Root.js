@@ -41,8 +41,8 @@ class App extends Component {
     return (
       <BrowserRouter>
         <Helmet>
-                <meta charSet="utf-8" />
-                <title>Wang Xiang Lin</title>
+          <meta charSet="utf-8" />
+          <title>Wang Xiang Lin</title>
         </Helmet>
         <Paper>
           <BusinessCard />

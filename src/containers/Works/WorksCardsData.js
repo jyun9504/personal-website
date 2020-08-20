@@ -2,9 +2,16 @@ import ImgRobofilter from '../../assets/images/robofilter.png';
 import ImgJyunChat from '../../assets/images/jyunchat.png';
 import ImgJyunGeo from '../../assets/images/jyungeo.png';
 import ImgBuytea from '../../assets/images/buytea.png';
+import ImgFaceDetect from '../../assets/images/facedetect.png';
 
 
 const worksCards = [
+  {
+    img: ImgFaceDetect, 
+    title: 'Face Detect', 
+    content: 'React App，後端 Node.js，資料庫 PostgreSQL，部署在 Heroku 上，User 與人臉偵測功能。',
+    src: 'https://face-detect-jyun.herokuapp.com/'
+  },
   {
     img: ImgRobofilter, 
     title: 'Robo Filter', 
